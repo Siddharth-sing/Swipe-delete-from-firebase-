@@ -69,6 +69,7 @@
             android:orientation="horizontal">
 
             <Button
+                android:id="@+id/btnSave"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Save"
@@ -76,9 +77,11 @@
                 android:padding="8dp"
                 android:layout_margin="15dp"
                 android:backgroundTint="#00B8D4"
+                android:onClick="save"
 
                 />
             <Button
+                android:id="@+id/btnCancel"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Cancel"
@@ -86,7 +89,7 @@
                 android:padding="8dp"
                 android:layout_margin="15dp"
                 android:backgroundTint="#00B8D4"
-
+                android:onClick="cancel"
                 />
 
         </LinearLayout>
