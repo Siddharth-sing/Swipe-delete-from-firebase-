@@ -16,7 +16,7 @@ class MainActivity : AppCompatActivity() {
 
         btnStart.setOnClickListener{
 
-            val intent = Intent(this,EventsActivity::class.java)
+            val intent = Intent(this,ListActivity::class.java)
             startActivity(intent);
             finish()
         }

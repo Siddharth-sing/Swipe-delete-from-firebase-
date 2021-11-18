@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SwipeDeleteFirebase">
         <activity
-            android:name=".EventsActivity"
+            android:name=".ListActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
