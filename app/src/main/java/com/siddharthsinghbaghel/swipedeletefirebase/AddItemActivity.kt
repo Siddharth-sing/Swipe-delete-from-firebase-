@@ -37,8 +37,14 @@ class AddItemActivity : AppCompatActivity() {
             descText = txtDesc.text.toString()
 
 
+            if(titleText == "" || descText == "")
+            {
+                Toast.makeText(this, "Empty Fields", LENGTH_SHORT).show()
+            }else{
+                saveInFirestore(timeStamp)
+            }
 
-            saveInFirestore(timeStamp)
+
         }
         btnCancel.setOnClickListener{
             Toast.makeText(this, "In cancel Button", LENGTH_SHORT).show()
