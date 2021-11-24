@@ -42,6 +42,9 @@ class AddItemActivity : AppCompatActivity() {
         }
         btnCancel.setOnClickListener{
             Toast.makeText(this, "In cancel Button", LENGTH_SHORT).show()
+            val intent = Intent(this,ListActivity::class.java)
+            startActivity(intent)
+            finish()
 
         }
 
@@ -61,6 +64,8 @@ class AddItemActivity : AppCompatActivity() {
 
         Toast.makeText(this,"${newItem.title} saved in database",LENGTH_LONG).show()
         val intent = Intent(this,ListActivity::class.java)
+        startActivity(intent)
+        finish()
     }
 
 
