@@ -1,4 +1,5 @@
 package com.siddharthsinghbaghel.swipedeletefirebase
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
@@ -22,17 +23,10 @@ class ListActivity : AppCompatActivity() {
 
          fabAdd.setOnClickListener{
 
-            // val intent = Intent(this,)
+             val intent = Intent(this,AddItemActivity::class.java)
+             startActivity(intent)
          }
         
-    }
-
-    private fun addItemToFirebase(newItem: ItemModel) {
-
-        val timeStampLong = System.currentTimeMillis() / 1000
-        val ts = timeStampLong.toString()
-
-        db.collection("Items").document(ts).set(newItem)
     }
 
 }

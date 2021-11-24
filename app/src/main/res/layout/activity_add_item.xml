@@ -2,46 +2,99 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar">
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
+        android:elevation="18dp"
+        android:layout_margin="12dp"
         android:backgroundTint="#00B8D4"
-        app:cardCornerRadius="10dp"
+        app:cardCornerRadius="15dp"
+        android:layout_centerInParent="true"
         >
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:padding="25sp"
-            android:layout_marginLeft="18dp"
-            android:layout_marginRight="18dp"
-            android:background="@color/white">
 
-            <TextView
-                android:id="@+id/txtTitle"
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@color/white">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/titleO"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_height="wrap_content"
+            android:visibility="visible">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/titleI"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Title"
+                android:inputType="text"
+                android:textSize="16sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/descO"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="0dp"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:layout_below="@+id/titleO">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/descI"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Description"
+                android:inputType="text"
+                android:textSize="16sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/descO"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnSave"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="5dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginEnd="5dp"
-                android:layout_marginBottom="5dp"
-                android:text="Title"
-                android:textColor="#0091EA"
-                android:textSize="22sp"
-                android:textStyle="bold" />
-        <TextView
-            android:id="@+id/txtDesc"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="This is the description."
-            android:layout_below="@+id/txtTitle"
-            android:textSize="18sp"
-            />
+                android:text="Save"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:layout_margin="15dp"
+                android:backgroundTint="#00B8D4"
+                android:onClick="save"
 
-        </RelativeLayout>
+                />
+            <Button
+                android:id="@+id/btnCancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cancel"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:layout_margin="15dp"
+                android:backgroundTint="#00B8D4"
+                android:onClick="cancel"
+                />
 
+        </LinearLayout>
+     </RelativeLayout>
     </androidx.cardview.widget.CardView>
 
 </RelativeLayout>
