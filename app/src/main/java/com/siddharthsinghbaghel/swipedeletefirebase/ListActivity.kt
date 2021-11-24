@@ -10,10 +10,11 @@ import android.view.Window
 import android.widget.Button
 import android.widget.Toast
 import com.google.android.material.floatingactionbutton.FloatingActionButton
+import com.google.firebase.firestore.FirebaseFirestore
 
 class ListActivity : AppCompatActivity() {
 
-
+    val db = FirebaseFirestore.getInstance();
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -37,10 +38,16 @@ class ListActivity : AppCompatActivity() {
 
     fun save(view: View) {
         Toast.makeText(this, "Saved", Toast.LENGTH_SHORT).show()
+        addItemToFirebase()
         val intent = Intent(this,ListActivity::class.java)
         startActivity(intent)
         finish()
     }
+
+    private fun addItemToFirebase() {
+        TODO("Not yet implemented")
+    }
+
     fun cancel(view: View) {
         Toast.makeText(this, "Canceled", Toast.LENGTH_SHORT).show()
         val intent = Intent(this,ListActivity::class.java)
