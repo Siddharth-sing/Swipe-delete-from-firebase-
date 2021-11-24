@@ -18,16 +18,19 @@
             android:layout_marginLeft="18dp"
             android:layout_marginRight="18dp"
             android:background="@color/white">
-        <TextView
-            android:id="@+id/txtTitle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Title"
-            android:textStyle="bold"
-            android:textColor="#0091EA"
-            android:layout_margin="5dp"
-            android:textSize="22sp"
-            />
+
+            <TextView
+                android:id="@+id/txtTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:text="Title"
+                android:textColor="#0091EA"
+                android:textSize="22sp"
+                android:textStyle="bold" />
         <TextView
             android:id="@+id/txtDesc"
             android:layout_width="wrap_content"

@@ -39,7 +39,7 @@
             android:layout_below="@+id/list"
             android:padding="10dp"
             tools:itemCount="10"
-            tools:listitem="@layout/list_item" />
+            tools:listitem="@layout/activity_add_item" />
 
 
     </RelativeLayout>

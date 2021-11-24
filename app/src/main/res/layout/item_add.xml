@@ -12,6 +12,7 @@
         android:layout_margin="12dp"
         android:backgroundTint="#00B8D4"
         app:cardCornerRadius="15dp"
+        android:layout_centerInParent="true"
         >
 
     <RelativeLayout
@@ -37,7 +38,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Title"
-                android:inputType="number"
+                android:inputType="text"
                 android:textSize="16sp" />
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -54,11 +55,11 @@
             android:layout_below="@+id/titleO">
 
             <androidx.appcompat.widget.AppCompatEditText
-                android:id="@+id/etMetricBFCWeight"
+                android:id="@+id/descI"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Description"
-                android:inputType="numberDecimal"
+                android:inputType="text"
                 android:textSize="16sp" />
         </com.google.android.material.textfield.TextInputLayout>
 
