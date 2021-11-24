@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "774243235764",
+    "project_id": "swipedeletefirebase",
+    "storage_bucket": "swipedeletefirebase.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:774243235764:android:fd5198b53d77ec96f9a4e1",
+        "android_client_info": {
+          "package_name": "com.siddharthsinghbaghel.swipedeletefirebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "774243235764-vmo7stl6v8f69sj3431c0e6cnko55pfq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD6du5ABBkmxguWtjrD75_OHHoITFn_4Fw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "774243235764-vmo7stl6v8f69sj3431c0e6cnko55pfq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

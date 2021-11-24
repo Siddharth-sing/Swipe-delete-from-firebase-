@@ -14,7 +14,7 @@ import com.google.firebase.firestore.FirebaseFirestore
 
 class ListActivity : AppCompatActivity() {
 
-    val db = FirebaseFirestore.getInstance();
+    val db = FirebaseFirestore.getInstance()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -29,7 +29,7 @@ class ListActivity : AppCompatActivity() {
              val customDialog = Dialog(this)
              customDialog.setContentView(R.layout.dialog_add)
              customDialog.show()
-             val window: Window? = customDialog.getWindow()
+             val window: Window? = customDialog.window
              window?.setLayout(ActionBar.LayoutParams.MATCH_PARENT, ActionBar.LayoutParams.WRAP_CONTENT)
 
          }
