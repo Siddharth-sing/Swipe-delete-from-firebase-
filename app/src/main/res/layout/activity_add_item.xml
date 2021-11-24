@@ -78,7 +78,6 @@
                 android:padding="8dp"
                 android:layout_margin="15dp"
                 android:backgroundTint="#00B8D4"
-                android:onClick="save"
 
                 />
             <Button
@@ -90,7 +89,6 @@
                 android:padding="8dp"
                 android:layout_margin="15dp"
                 android:backgroundTint="#00B8D4"
-                android:onClick="cancel"
                 />
 
         </LinearLayout>

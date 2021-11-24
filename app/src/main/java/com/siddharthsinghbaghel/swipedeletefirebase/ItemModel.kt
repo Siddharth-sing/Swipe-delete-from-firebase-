@@ -1,12 +1,8 @@
 package com.siddharthsinghbaghel.swipedeletefirebase
 
-public class ItemModel {
-    var title: String? = null
-    var description: String? = null
+data class ItemModel (
+    var title: String? = "",
+    var description: String? = "",
+    var ts: String? = ""
+)
 
-    constructor() {}
-    constructor(title: String?, desc: String?) {
-        this.title = title
-        this.description = desc
-    }
-}
