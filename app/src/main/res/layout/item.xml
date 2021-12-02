@@ -31,14 +31,14 @@
                 android:textColor="#0091EA"
                 android:textSize="22sp"
                 android:textStyle="bold" />
-        <TextView
-            android:id="@+id/txtDesc"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="This is the description."
-            android:layout_below="@+id/txtTitle"
-            android:textSize="18sp"
-            />
+
+            <TextView
+                android:id="@+id/txtDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtTitle"
+                android:text="This is the description."
+                android:textSize="18sp" />
 
         </RelativeLayout>
 
