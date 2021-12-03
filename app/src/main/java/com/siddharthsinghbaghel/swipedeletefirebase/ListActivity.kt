@@ -45,7 +45,6 @@ class ListActivity : AppCompatActivity() {
         mAdapter = ListAdapter(options)
         mAdapter.startListening()
         rv  = findViewById(R.id.rvList)
-
         rv.layoutManager = LinearLayoutManager(this)
         rv.adapter = mAdapter
 
