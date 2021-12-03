@@ -2,7 +2,7 @@ package com.siddharthsinghbaghel.swipedeletefirebase
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.TextView
+
 import android.widget.Toast
 import android.widget.Toast.LENGTH_LONG
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -15,8 +15,8 @@ import com.google.firebase.firestore.Query
 class ListActivity : AppCompatActivity() {
 
 
-    private val db  = FirebaseFirestore.getInstance()
-    lateinit var mAdapter : ListAdapter
+    var db  = FirebaseFirestore.getInstance()
+    private lateinit var mAdapter : ListAdapter
     private lateinit var rv : RecyclerView
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -36,15 +36,16 @@ class ListActivity : AppCompatActivity() {
 
     private fun setUpRecyclerView() {
         Toast.makeText(this,"Here",LENGTH_LONG).show()
-        val query: Query = db.collection("ItemList").orderBy("ts", Query.Direction.DESCENDING)
+        val query: Query = db.collection("ItemList").orderBy("ts", Query.Direction.DESCENDING).limit(50)
         Toast.makeText(this,"Query == ${query}",LENGTH_LONG).show()
             val options: FirestoreRecyclerOptions<ItemModel> = FirestoreRecyclerOptions.Builder<ItemModel>()
             .setQuery(query, ItemModel::class.java)
             .build()
 
         mAdapter = ListAdapter(options)
+        mAdapter.startListening()
         rv  = findViewById(R.id.rvList)
-        rv.setHasFixedSize(true)
+
         rv.layoutManager = LinearLayoutManager(this)
         rv.adapter = mAdapter
 

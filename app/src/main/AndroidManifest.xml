@@ -11,10 +11,10 @@
         android:theme="@style/Theme.SwipeDeleteFirebase">
         <activity
             android:name=".AddItemActivity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".ListActivity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".MainActivity"
             android:exported="true">

@@ -11,7 +11,7 @@ import com.firebase.ui.firestore.FirestoreRecyclerOptions
 class ListAdapter(options: FirestoreRecyclerOptions<ItemModel>) :
     FirestoreRecyclerAdapter<ItemModel, ListAdapter.ListViewHolder>(options) {
 
-     class ListViewHolder(view:View): RecyclerView.ViewHolder(view){
+     inner class ListViewHolder(view:View): RecyclerView.ViewHolder(view){
 
         val txtTitle : TextView = view.findViewById(R.id.txtTitle)
         val txtDesc : TextView = view.findViewById(R.id.txtDesc)
