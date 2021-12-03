@@ -38,10 +38,9 @@ class ListActivity : AppCompatActivity() {
     }
 
     private fun setUpRecyclerView() {
-        Toast.makeText(this,"Here",LENGTH_LONG).show()
+
         val query: Query = db.collection("ItemList").orderBy("ts", Query.Direction.DESCENDING)
-        Toast.makeText(this,"Query == ${query}",LENGTH_LONG).show()
-            val options: FirestoreRecyclerOptions<ItemModel> = FirestoreRecyclerOptions.Builder<ItemModel>()
+        val options: FirestoreRecyclerOptions<ItemModel> = FirestoreRecyclerOptions.Builder<ItemModel>()
             .setQuery(query, ItemModel::class.java)
             .build()
 
@@ -94,7 +93,6 @@ class ListActivity : AppCompatActivity() {
 
     override fun onStart() {
         super.onStart()
-        Toast.makeText(this,"onStart",LENGTH_LONG).show()
         mAdapter.startListening()
     }
 
