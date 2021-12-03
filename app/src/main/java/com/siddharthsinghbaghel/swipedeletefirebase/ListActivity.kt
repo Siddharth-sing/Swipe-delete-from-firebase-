@@ -16,14 +16,12 @@ class ListActivity : AppCompatActivity() {
 
 
     private val db  = FirebaseFirestore.getInstance()
-    lateinit var adapter : ListAdapter
+    lateinit var mAdapter : ListAdapter
+    private lateinit var rv : RecyclerView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_events)
-
-
-        setUpRecyclerView()
 
         val fabAdd : FloatingActionButton = findViewById(R.id.fabAdd)
 
@@ -32,32 +30,37 @@ class ListActivity : AppCompatActivity() {
              val intent = Intent(this,AddItemActivity::class.java)
              startActivity(intent)
          }
+        setUpRecyclerView()
         
     }
 
     private fun setUpRecyclerView() {
         Toast.makeText(this,"Here",LENGTH_LONG).show()
         val query: Query = db.collection("ItemList").orderBy("ts", Query.Direction.DESCENDING)
-        print("Query == $query")
+        Toast.makeText(this,"Query == ${query}",LENGTH_LONG).show()
             val options: FirestoreRecyclerOptions<ItemModel> = FirestoreRecyclerOptions.Builder<ItemModel>()
             .setQuery(query, ItemModel::class.java)
             .build()
 
-        adapter = ListAdapter(options)
-        val rv : RecyclerView = findViewById(R.id.rvList)
+        mAdapter = ListAdapter(options)
+        rv  = findViewById(R.id.rvList)
         rv.setHasFixedSize(true)
         rv.layoutManager = LinearLayoutManager(this)
-        rv.adapter = adapter
+        rv.adapter = mAdapter
+
+
+
     }
 
     override fun onStart() {
         super.onStart()
-        adapter.startListening()
+        Toast.makeText(this,"onStart",LENGTH_LONG).show()
+        mAdapter.startListening()
     }
 
     override fun onStop() {
         super.onStop()
-        adapter.stopListening()
+        mAdapter.stopListening()
     }
 
 }
