@@ -2,24 +2,26 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginRight="2dp"
-        android:layout_marginLeft="2dp"
-        android:layout_marginBottom="15dp"
         android:backgroundTint="#00B8D4"
-        app:cardCornerRadius="10dp"
-        >
+        android:padding="10dp"
+        app:cardCornerRadius="12dp">
+
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:padding="25sp"
             android:layout_marginLeft="18dp"
             android:layout_marginRight="18dp"
-            android:background="@color/white">
+            android:background="@color/white"
+            android:padding="25sp">
 
             <TextView
                 android:id="@+id/txtTitle"
@@ -40,8 +42,8 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/txtTitle"
                 android:text="This is the description."
-                android:textSize="18sp"
-                android:textColor="#00B8D4"/>
+                android:textColor="#00B8D4"
+                android:textSize="18sp" />
 
             <TextView
                 android:id="@+id/txtTs"
@@ -50,7 +52,7 @@
                 android:layout_below="@+id/txtDesc"
                 android:text="This is the description."
                 android:textSize="18sp"
-                android:visibility="gone"/>
+                android:visibility="gone" />
 
         </RelativeLayout>
 

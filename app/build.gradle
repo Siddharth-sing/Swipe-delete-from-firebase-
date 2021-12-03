@@ -50,4 +50,5 @@ dependencies {
 
 
     implementation 'it.xabaras.android:recyclerview-swipedecorator:1.2.3'
+
 }

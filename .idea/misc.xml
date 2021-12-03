@@ -3,6 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/KIIT/AndroidStudioProjects/Swipe-delete-from-firebase-/app/src/main/res/drawable/ic_baseline_add_24.xml" value="0.19114583333333332" />
+        <entry key="..\:/Users/KIIT/AndroidStudioProjects/Swipe-delete-from-firebase-/app/src/main/res/drawable/ic_baseline_delete_sweep_24.xml" value="0.19114583333333332" />
         <entry key="..\:/Users/KIIT/AndroidStudioProjects/Swipe-delete-from-firebase-/app/src/main/res/layout/activity_add_item.xml" value="0.175" />
         <entry key="..\:/Users/KIIT/AndroidStudioProjects/Swipe-delete-from-firebase-/app/src/main/res/layout/activity_events.xml" value="0.175" />
         <entry key="..\:/Users/KIIT/AndroidStudioProjects/Swipe-delete-from-firebase-/app/src/main/res/layout/activity_main.xml" value="0.175" />

@@ -13,6 +13,7 @@ import com.firebase.ui.firestore.FirestoreRecyclerOptions
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.firestore.Query
+import it.xabaras.android.recyclerview.swipedecorator.RecyclerViewSwipeDecorator
 
 class ListActivity : AppCompatActivity() {
 
@@ -65,7 +66,25 @@ class ListActivity : AppCompatActivity() {
                 mAdapter.deleteItem(viewHolder.adapterPosition)
             }
 
+            override fun onChildDraw(c: Canvas, recyclerView: RecyclerView, viewHolder: RecyclerView.ViewHolder, dX: Float, dY: Float, actionState: Int, isCurrentlyActive: Boolean) {
 
+                RecyclerViewSwipeDecorator.Builder(c, recyclerView, viewHolder, dX, dY, actionState, isCurrentlyActive)
+                    .addBackgroundColor(
+                        ContextCompat.getColor(
+                            this@ListActivity,
+                            android.R.color.holo_red_light
+                        )
+                    )
+                    .addActionIcon(R.drawable.ic_baseline_delete_sweep_24)
+                    .addSwipeRightLabel("Deleting the Item")
+                    .addSwipeLeftLabel("Deleting the Item")
+                    .setSwipeRightLabelColor(R.color.white)
+                    .setSwipeLeftLabelColor(R.color.white)
+                    .create()
+                    .decorate()
+
+                super.onChildDraw(c, recyclerView, viewHolder, dX, dY, actionState, isCurrentlyActive)
+            }
         }
         val itemTouchHelper = ItemTouchHelper(callback)
         itemTouchHelper.attachToRecyclerView(rv)
