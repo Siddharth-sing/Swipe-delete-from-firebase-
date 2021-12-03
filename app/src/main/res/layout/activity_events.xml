@@ -39,7 +39,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/list"
             android:padding="10dp"
-            android:visibility="visible" />
+             />
 
 
     </RelativeLayout>
