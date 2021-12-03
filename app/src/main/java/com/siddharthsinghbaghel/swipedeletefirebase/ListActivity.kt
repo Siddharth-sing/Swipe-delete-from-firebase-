@@ -36,7 +36,7 @@ class ListActivity : AppCompatActivity() {
 
     private fun setUpRecyclerView() {
         Toast.makeText(this,"Here",LENGTH_LONG).show()
-        val query: Query = db.collection("ItemList").orderBy("ts", Query.Direction.DESCENDING).limit(50)
+        val query: Query = db.collection("ItemList").orderBy("ts", Query.Direction.DESCENDING)
         Toast.makeText(this,"Query == ${query}",LENGTH_LONG).show()
             val options: FirestoreRecyclerOptions<ItemModel> = FirestoreRecyclerOptions.Builder<ItemModel>()
             .setQuery(query, ItemModel::class.java)
