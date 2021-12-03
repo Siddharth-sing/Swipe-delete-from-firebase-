@@ -40,6 +40,15 @@
                 android:text="This is the description."
                 android:textSize="18sp" />
 
+            <TextView
+                android:id="@+id/txtTs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtDesc"
+                android:text="This is the description."
+                android:textSize="18sp"
+                android:visibility="gone"/>
+
         </RelativeLayout>
 
     </androidx.cardview.widget.CardView>
