@@ -31,5 +31,10 @@ class ListAdapter(options: FirestoreRecyclerOptions<ItemModel>) :
         holder.txtTs.text = itemModel.ts
     }
 
+    fun deleteItem(position : Int)
+    {
+        snapshots.getSnapshot(position).reference.delete()
+    }
+
 
 }
