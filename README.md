@@ -150,9 +150,12 @@ val itemTouchHelper = ItemTouchHelper(callback)
 * That's all now you can see the magic 😇
 
 <p/>
+
 <a name="GitHub"></a> 
 ## GitHub Repository
+
 * Fork the repository for better and easy understanding and for quick learning.
+
 <a href="https://github.com/Siddharth-sing">
   <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white">
 </a>
