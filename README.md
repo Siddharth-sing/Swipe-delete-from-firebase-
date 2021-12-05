@@ -13,7 +13,14 @@
 
 * Sounds amazing, yes it is amazing, let's start :
 
-{% youtube https://www.youtube.com/watch?v=sG1O5zXQJQI&ab_channel=SiddharthSinghBaghel %}
+
+ 
+ 
+ 
+ <a href="https://www.youtube.com/watch?v=sG1O5zXQJQI&ab_channel=SiddharthSinghBaghel" target="_blank">
+ <img src="https://user-images.githubusercontent.com/72120258/144758938-c13eb496-55f4-482c-adc7-dca17293ebdc.jpg" alt="Watch the video" width="800" height="400" border="10" />
+</a>
+
 <br/>
 
 ### <u>Note</u>: 
