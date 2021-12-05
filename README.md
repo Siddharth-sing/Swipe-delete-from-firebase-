@@ -153,7 +153,9 @@ val itemTouchHelper = ItemTouchHelper(callback)
 <a name="GitHub"></a> 
 ## GitHub Repository
 * Fork the repository for better and easy understanding and for quick learning.
-{% github https://github.com/Siddharth-sing/Swipe-delete-from-firebase- %}
+<a href="https://github.com/Siddharth-sing">
+  <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white">
+</a>
 
 <a name="support"></a> 
 ## Writer's Support
