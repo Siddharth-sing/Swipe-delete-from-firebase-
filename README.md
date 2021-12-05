@@ -108,7 +108,7 @@ val itemTouchHelper = ItemTouchHelper(callback)
 
 * The above code is sufficient for the swipe to delete feature. It will look something like below 👇 
 
-![Image](https://user-images.githubusercontent.com/72120258/144758655-5b788988-2f20-48c6-9b6a-ced0820950cd.gif)
+<img src="https://user-images.githubusercontent.com/72120258/144758655-5b788988-2f20-48c6-9b6a-ced0820950cd.gif" height="400px" width="700px">
 
  
 
