@@ -1,4 +1,4 @@
-#App's Overview
+# App's Overview
 
 * In this article I am gonna take you through the development of 
   Swipe Delete Feature, specifically we are going to delete the 
