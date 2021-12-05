@@ -108,7 +108,9 @@ val itemTouchHelper = ItemTouchHelper(callback)
 
 * The above code is sufficient for the swipe to delete feature. It will look something like below 👇 
 
-![Image description](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/ah9yjj7r297kopkq6qwa.gif)
+![Image](https://user-images.githubusercontent.com/72120258/144758655-5b788988-2f20-48c6-9b6a-ced0820950cd.gif)
+
+ 
 
 * To decorate our swipe feature we will override `onChildDraw` method. This method has various functions, some of them will be discussed in this article others you can explore [here](https://github.com/xabaras/RecyclerViewSwipeDecorator#customizing).
 
