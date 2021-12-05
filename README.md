@@ -1,3 +1,10 @@
+
+## Article is on dev.to click below 👇
+ <a href="https://dev.to/siddharthsing/swipe-to-delete-archive-etc-from-cloud-firestore-with-recyclerview-2ok3">
+  <img src="https://img.shields.io/badge/dev.to-0A0A0A?style=for-the-badge&logo=dev.to&logoColor=white" height="100px" width="100px">
+ </a>
+
+
 # App's Overview
 
 * In this article I am gonna take you through the development of 
