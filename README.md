@@ -13,7 +13,7 @@
 
 <p>The article only contains the explanation of "swipe to delete" feature, firebase implementation and UI details are not discussed, but I will provide the GitHub from which you can easily go through the complete code of the app.<p/>
 
-##Table Of Content
+## Table Of Content
 
 - [Dependencies Setup ](#setup)
 - [Code Explanation](#code)
@@ -34,7 +34,7 @@ dependencies{
 
 ```
 <a name="code"></a> 
-##Code Explanation
+## Code Explanation
 <p>
 
 * Create an `ItemTouchHelper.SimpleCallback`, instantiate an  
@@ -151,12 +151,12 @@ val itemTouchHelper = ItemTouchHelper(callback)
 
 <p/>
 <a name="GitHub"></a> 
-##GitHub Repository
+## GitHub Repository
 * Fork the repository for better and easy understanding and for quick learning.
 {% github https://github.com/Siddharth-sing/Swipe-delete-from-firebase- %}
 
 <a name="support"></a> 
-##Writer's Support
+## Writer's Support
 
 * If you find the article useful show some ❤️ by staring at some of my repositories and following me on dev.to and github.
  <div>
